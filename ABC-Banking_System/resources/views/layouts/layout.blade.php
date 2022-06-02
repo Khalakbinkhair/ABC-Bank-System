@@ -10,7 +10,7 @@
 	
 	position: fixed;
     top: 700px;
-left: 1350px;		
+    left: 1320px;		
 }
 </style>
 

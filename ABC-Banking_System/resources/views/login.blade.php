@@ -9,6 +9,8 @@
 
 <center>
 
+<form action="{{route('logsubmit')}}"  method="post"  >
+  {{@csrf_field()}}
 
 <h1> <u>Login Here</u></h1>
 <b>UserID:  <input type='text' name="userid" value="{{old('userid')}}"   placeholder='Enter Your Account Number'> 
@@ -35,6 +37,6 @@
 
 </div>
 
-
+</form>
 
     @endsection
