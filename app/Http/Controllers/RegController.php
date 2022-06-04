@@ -70,4 +70,40 @@ class RegController extends Controller
     public function login(){
         return view('login');
     }
+    public function logsubmit(Request $req){
+       
+
+        $user= registration::where ("userid",$req->userid)
+        ->where('password',md5($req->password))
+        ->first();
+      
+
+        if($user)
+        {
+            $req->session()->put('userid',$user->userid);
+            $req->session()->put('name',$user->name);
+         
+          
+
+
+
+
+           $req->session()->flash('msg',"Login Successful");
+            return view('dashboard.dashboard')
+            ->with('user',$user);
+         
+            
+        }
+        else{
+            session()->flash('msg',"userID password invalid");
+            return redirect()->route('login');
+        }
+      
+
+    }
+    public function logout(){
+
+        session()->flush();
+        return redirect()->route('login');
+    }
 }

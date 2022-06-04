@@ -9,8 +9,8 @@
 #L3{
 	
 	position: fixed;
-    top: 700px;
-    left: 1320px;		
+    top: 625px;
+    left: 1190px;		
 }
 </style>
 

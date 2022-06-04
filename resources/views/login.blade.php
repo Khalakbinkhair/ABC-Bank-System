@@ -1,4 +1,4 @@
-
+@include('logincss')
 @extends('layouts.layout')
 @section('content')
 
@@ -11,7 +11,10 @@
 
 <form action="{{route('logsubmit')}}"  method="post"  >
   {{@csrf_field()}}
+<h1><u> ABC-Banking-System</h1></u>
 
+  <div id='i1'>
+  <div class="c1">
 <h1> <u>Login Here</u></h1>
 <b>UserID:  <input type='text' name="userid" value="{{old('userid')}}"   placeholder='Enter Your Account Number'> 
     @error('userid')
@@ -24,8 +27,6 @@
 
 @error('userid')
 
-
-
 <span>{{$message}} </span>
 
 @enderror
@@ -35,6 +36,7 @@
 
 </center>
 
+</div>
 </div>
 
 </form>
