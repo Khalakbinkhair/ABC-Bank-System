@@ -26,4 +26,16 @@ class ourbankingController extends Controller
 
         return view('ourbanking.other_banking');
     }
+    public function FDR(){
+
+        return view('ourbanking.other_banking.FDR');
+    }
+    public function business_acc(){
+
+        return view('ourbanking.other_banking.business_acc');
+    }
+    public function current_acc(){
+
+        return view('ourbanking.other_banking.current_acc');
+    }
 }

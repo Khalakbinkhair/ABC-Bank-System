@@ -51,5 +51,13 @@ Route::get('/ourbanking/digital_banking',[ourbankingController::class,'digital_b
 Route::get('/ourbanking/other_banking',[ourbankingController::class,'other_banking'])->name('Other_Banking');
 
 
+Route::get('/ourbanking/deposit_products/FDR',[ourbankingController::class,'FDR'])->name('FDR');
+Route::get('/ourbanking/deposit_products/business_acc',[ourbankingController::class,'business_acc'])->name('business_acc');
+Route::get('/ourbanking/deposit_products/current_acc',[ourbankingController::class,'current_acc'])->name('current_acc');
+
+
+
+
+
 
 

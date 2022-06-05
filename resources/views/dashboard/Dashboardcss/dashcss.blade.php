@@ -31,6 +31,7 @@
            text-align: center;
            top: -80px;
            left:70px;
+          
            
          
        }
@@ -74,6 +75,7 @@
        .navbar1{
            
            text-align: center;
+      
            
            
          
@@ -113,6 +115,52 @@
        
      
        .dropdown-container1:hover .dropdown-content1{
+           display: block;
+       }
+
+       .navbar2{
+           
+           text-align: center;
+           
+           
+           
+         
+       }
+
+       .navbar2 a{
+           color: black;
+           text-decoration: none;
+          
+           padding: 10px 20px;
+          
+           
+       }
+
+       .dropdown-container2{
+           display: inline;
+           position: absolute;
+           top: 00px;
+           left:178px;
+          
+       }
+
+       .dropdown-content2{
+           position: absolute;
+         
+          left: 00px;
+        
+           text-align: left;
+           
+           display: none;
+       }
+
+       .dropdown-content2 a{
+           display: block;
+       }
+
+       
+     
+       .dropdown-container2:hover .dropdown-content1{
            display: block;
        }
 
