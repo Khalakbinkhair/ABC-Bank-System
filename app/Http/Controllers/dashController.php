@@ -11,10 +11,7 @@ class dashController extends Controller
 
         return view('dashboard.dashboard');
     }
-    public function home(){
-
-        return view('dashboard.dashboard');
-    }
+ 
     public function aboutus(){
 
         return view('dashboard.dashboard');

@@ -6,6 +6,7 @@ use App\Http\Controllers\RegController;
 use App\Http\Controllers\dashController;
 use App\Http\Controllers\aboutusController;
 use App\Http\Controllers\ourbankingController;
+use App\Http\Controllers\homeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +30,7 @@ Route::get('/logout',[RegController::class,'logout'])->name('logout');
 
 
 Route::get('/dashboard/dashboard',[dashController::class,'dashboard'])->name('dashboard');
-Route::get('/home',[dashController::class,'home'])->name('home');
+
 Route::get('/ourbanking',[dashController::class,'ourbanking'])->name('ourbanking');
 Route::get('/location',[dashController::class,'location'])->name('location');
 Route::get('/mediacorner',[dashController::class,'mediacorner'])->name('mediacorner');
@@ -54,6 +55,11 @@ Route::get('/ourbanking/other_banking',[ourbankingController::class,'other_banki
 Route::get('/ourbanking/deposit_products/FDR',[ourbankingController::class,'FDR'])->name('FDR');
 Route::get('/ourbanking/deposit_products/business_acc',[ourbankingController::class,'business_acc'])->name('business_acc');
 Route::get('/ourbanking/deposit_products/current_acc',[ourbankingController::class,'current_acc'])->name('current_acc');
+
+
+
+Route::get('/home/profile',[homeController::class,'profile'])->name('profile');
+
 
 
 

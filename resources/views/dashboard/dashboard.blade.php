@@ -17,7 +17,7 @@
 <div class="c1">
 
 
-<a href="{{route('home')}}" style="color:black" class="btn btn-outline-secondar"> Home</a>
+<a href="{{route('profile')}}" style="color:black" class="btn btn-outline-secondar"> Home</a>
 </div>
 
 
